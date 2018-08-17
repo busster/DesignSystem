@@ -1,9 +1,8 @@
+import Vue from 'vue'
 import * as Components from './components'
 
-let DesignSystem = Vue => {
-  Object.values(Components).forEach((Component) => {
-    Vue.use(Component)
-  })
-}
+Object.keys(Components).forEach(componentName => {
+  Vue.component(componentName, Components[componentName])
+})
 
-export default DesignSystem
+export default Components
