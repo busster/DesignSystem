@@ -1,5 +1,5 @@
-import Button from './Button'
+import BButton from './Button/BButton.vue'
 
 export {
-  Button
+  BButton
 }
